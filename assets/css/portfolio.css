@@ -1,4 +1,4 @@
- #bioPhoto{
+#bioPhoto{
  	width: 60%;
  	padding-top: 2%;
 /* 	padding-bottom: 4%;*/
@@ -10,7 +10,7 @@
 	height: auto;
 }
 
- body{
+body{
 
  	/*?????????find another way of getting the background color to come through rather than !important*/
  	background-color: #AFCEF0 !important;
