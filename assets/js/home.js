@@ -10,4 +10,8 @@ $(window).on("scroll", function(){
 	if(percentScrolled <= 1){
 		 $("#arrow").fadeTo(0, 1-percentScrolled);
 	}
+	else{
+		$("#arrow").fadeOut(100);
+	}
 });
+
