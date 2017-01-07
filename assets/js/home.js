@@ -1,8 +1,13 @@
-var arrowOffset = $("#arrow").offset();
-var arrowPosition = $("#arrow").position();
+// Fade Out Arrow Upon Scrolling Down
+var windowHeight = $(window).height()/3;
+var scrollPosition;
+var percentScrolled;
 
-var bodyOffset = $("body").offset();
-var bodyPosition = $("body").position();
+$(window).on("scroll", function(){
+	scrollPosition = $(window).scrollTop();
+	percentScrolled = scrollPosition/windowHeight;
 
-// continue experimenting with this:
-// http://stackoverflow.com/questions/26694385/fade-in-on-scroll-down-fade-out-on-scroll-up-based-on-element-position-in-win
+	if(percentScrolled <= 1){
+		 $("#arrow").fadeTo(0, 1-percentScrolled);
+	}
+});
