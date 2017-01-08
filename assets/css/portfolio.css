@@ -1,41 +1,11 @@
-#bioPhoto{
- 	width: 60%;
- 	padding-top: 2%;
-/* 	padding-bottom: 4%;*/
- 	margin: auto;
-}
-
-#bioPhoto img{
-	width: 100%;
-	height: auto;
-}
+/*fix specifity issues in "body" and "bioPhoto h1"*/
+/*http://stackoverflow.com/questions/19768794/custom-css-being-overridden-by-bootstrap-css*/
 
 body{
 
- 	/*?????????find another way of getting the background color to come through rather than !important*/
- 	background-color: #AFCEF0 !important;
+ 	/*fix specificity*/
+ 	background-color: rgb(209, 206, 213);
  }
-
-hr{
-	width: 500px;
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-header h1{
-	text-transform: uppercase;
-	margin: 0;
-	font-weight: 700;
-	font-size: 2.5em;
-}
-
-/*??????figure out how to fade away when scrolled down*/
-#arrow{
-	position: absolute;
-	text-align: center;
-	bottom: 5vh;
-	font-size: 1.5em;
-}
 
 header{
 	background: 
@@ -58,23 +28,29 @@ header{
 	position: relative;
 }
 
+.title h1{
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 700;
+	font-size: 2.5em;
+}
+
+hr{
+	width: 500px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
 header p{
 	color: white;
 }
 
-#circle{
-	padding-bottom: 5%;
-}
 
-#icons img{
-	padding-top: 10px;
-	padding-left: 5px;
-	padding-right: 5px;
-}	
-
-.justified{
-	text-align: left;
-	font-size: 1em;
+#arrow{
+	position: absolute;
+	text-align: center;
+	bottom: 5vh;
+	font-size: 1.5em;
 }
 
 main{
@@ -92,9 +68,104 @@ main p{
 	font-family: "Merriweather";
 }
 
+#circle{
+	padding-bottom: 5%;
+}
 
+#circle img{
+	width: 100px;
+	height: 100px;
+}
+
+#icons img{
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}	
+
+.justified{
+	text-align: left;
+	font-size: 1em;
+}
+
+#bioPhoto h1{
+	font-weight: 700;
+	font-size: 3em;
+}
+
+#bioPhoto{
+ 	width: 60%;
+ 	padding-top: 2%;
+/* 	padding-bottom: 4%;*/
+ 	margin: auto;
+}
+
+#bioPhoto img{
+	width: 100%;
+	height: auto;
+}
+
+.navbar{
+	/*background-color: rgb(95, 113, 161);*/
+	background-color: green;
+}
+
+/*fix up specificity*/
+/*.navbar-nav > li > a{
+	color: white;
+}
+
+.navbar-nav .navbar-brand{
+	color: white;
+}*/
  
 
+
+#a{
+	color: rgb(124, 136, 148);
+	font-size: 5em;
+	font-weight: 700;
+}
+#b{
+	color: rgb(95, 113, 161);
+	font-size: 5em;
+	font-weight: 700;
+}
+#c{
+	color: rgb(97, 106, 145);
+	font-size: 5em;
+	font-weight: 700;
+}
+#d{
+	color: rgb(209, 206, 213);
+	font-size: 5em;
+	font-weight: 700;
+}
+#e{
+	color: rgb(167, 171, 138);
+	font-size: 5em;
+	font-weight: 700;
+}
+#f{
+	color: rgb(91, 101, 40);
+	font-size: 5em;
+	font-weight: 700;
+}
+#g{
+	color: rgb(162, 164, 153);
+	font-size: 5em;
+	font-weight: 700;
+}
+
+
+/*124, 136, 148
+95, 113, 161
+97, 106, 145
+209, 206, 213
+167, 171, 138
+91, 101, 40
+162, 164, 153
+*/
 
 
 
