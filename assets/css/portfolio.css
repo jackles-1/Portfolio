@@ -61,7 +61,7 @@ main{
 }
 
 main p{
-	color: black;
+	color: #333;
 	font-size: 1.5em;
 	font-family: "Merriweather";
 }
@@ -86,16 +86,21 @@ main p{
 	font-size: 1em;
 }
 
+.pageP{
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*CHANGE MARGIN TO PX (DOESN'T SIZE WELL AS IT IS)*/
 #bioPhoto h1{
 	font-weight: 700;
 	font-size: 3em;
+	margin: 14% 0 5% 0;
 }
 
 #bioPhoto{
- 	width: 60%;
- 	padding-top: 2%;
-/* 	padding-bottom: 4%;*/
- 	margin: auto;
+ 	width: 40%;
+ 	margin: 0 auto;
 }
 
 #bioPhoto img{
@@ -104,20 +109,31 @@ main p{
 }
 
 .navbar{
-	/*background-color: rgb(95, 113, 161);*/
-	background-color: green;
+	background-color: rgb(95, 113, 161);
 }
 
-/*fix up specificity*/
-/*.navbar-nav > li > a{
+/*navbar links*/
+.navbar-default .navbar-nav > li > a{
 	color: white;
 }
 
-.navbar-nav .navbar-brand{
+/*navbar links on hover*/
+.navbar-default .navbar-nav > li > a:hover{
+	color: #333;
+}
+
+/*navbar active link (home)*/
+.navbar-default .navbar-nav>.active>a{
+	background-color: rgb(86, 102, 145);
 	color: white;
-}*/
+}
+
+/*navbar active linke (home) on hover*/
+.navbar-default .navbar-nav > .active > a:hover{
+	background-color: rgb(119, 141, 201);
+	color: #333;
+}
  
-
 
 #a{
 	color: rgb(124, 136, 148);
