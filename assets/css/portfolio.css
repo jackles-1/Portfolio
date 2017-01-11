@@ -5,7 +5,8 @@ body{
  	background-color: rgb(209, 206, 213);
  }
 
-header{
+/*HOME PAGE*/
+#homeHeader{
 	background: 
 		linear-gradient(
 			rgba(0, 0, 0, 0.5),
@@ -26,7 +27,7 @@ header{
 	position: relative;
 }
 
-.title h1{
+#homeHeader h1{
 	text-transform: uppercase;
 	margin: 0;
 	font-weight: 700;
@@ -39,7 +40,7 @@ hr{
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-header p{
+#homeHeader p{
 	color: white;
 }
 
@@ -51,7 +52,7 @@ header p{
 	font-size: 1.5em;
 }
 
-main{
+#homeBody{
 	text-align: center;
 	margin: auto;
 	padding-left: 20%;
@@ -60,7 +61,7 @@ main{
 	padding-bottom: 5%;
 }
 
-main p{
+#homeBody p{
 	color: #333;
 	font-size: 1.5em;
 	font-family: "Merriweather";
@@ -81,26 +82,26 @@ main p{
 	padding-right: 5px;
 }	
 
-.justified{
+/*PAGES*/
+.bodyPage p{
+	width: 50%;
+	margin: 0 auto 20px auto;
 	text-align: left;
-	font-size: 1em;
+	font-size: 1.25em;
+	font-family: "Merriweather";
 }
 
-.pageP{
-	width: 90%;
-	margin: 0 auto;
-}
-
-/*CHANGE MARGIN TO PX (DOESN'T SIZE WELL AS IT IS)*/
-#bioPhoto h1{
+.bodyPage h1{
 	font-weight: 700;
 	font-size: 3em;
-	margin: 14% 0 5% 0;
+	margin: 65px 0 25px 0;
 }
 
+/*FIGURE OUT HOW TO STOP SCALING WHEN THE SCREEN IS SMALL ENOUGH (THE PHOTO GETS TOO SMALL)*/
+/*FIGURE OUT HOW TO REMOVE THIS FROM ITS DIV??*/
 #bioPhoto{
  	width: 40%;
- 	margin: 0 auto;
+ 	margin: 0 auto 30px auto;
 }
 
 #bioPhoto img{
@@ -108,8 +109,11 @@ main p{
 	height: auto;
 }
 
+/*NAVBAR*/
 .navbar{
-	background-color: rgb(95, 113, 161);
+/*	background-color: rgb(95, 113, 161);*/
+	background-color: rgb(97, 106, 145);
+	font-family: "Raleway";
 }
 
 /*navbar links*/
@@ -119,67 +123,39 @@ main p{
 
 /*navbar links on hover*/
 .navbar-default .navbar-nav > li > a:hover{
-	color: #333;
+	/*color: #333;*/
+	color: black;
 }
 
 /*navbar active link (home)*/
 .navbar-default .navbar-nav>.active>a{
-	background-color: rgb(86, 102, 145);
+	/*0.9*.navbar*/
+	/*background-color: rgb(86, 102, 145);*/
+	background-color: rgb(87, 95, 131);
 	color: white;
 }
 
 /*navbar active linke (home) on hover*/
 .navbar-default .navbar-nav > .active > a:hover{
-	background-color: rgb(119, 141, 201);
-	color: #333;
-}
- 
-
-#a{
-	color: rgb(124, 136, 148);
-	font-size: 5em;
-	font-weight: 700;
-}
-#b{
-	color: rgb(95, 113, 161);
-	font-size: 5em;
-	font-weight: 700;
-}
-#c{
-	color: rgb(97, 106, 145);
-	font-size: 5em;
-	font-weight: 700;
-}
-#d{
-	color: rgb(209, 206, 213);
-	font-size: 5em;
-	font-weight: 700;
-}
-#e{
-	color: rgb(167, 171, 138);
-	font-size: 5em;
-	font-weight: 700;
-}
-#f{
-	color: rgb(91, 101, 40);
-	font-size: 5em;
-	font-weight: 700;
-}
-#g{
-	color: rgb(162, 164, 153);
-	font-size: 5em;
-	font-weight: 700;
+	/*1.15*.navbar*/
+	/*background-color: rgb(109, 130, 185);*/
+	background-color: rgb(112, 122, 167);
+	/*color: #333;*/
+	color: black;
 }
 
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: white;
+}
 
-/*124, 136, 148
-95, 113, 161
-97, 106, 145
-209, 206, 213
-167, 171, 138
-91, 101, 40
-162, 164, 153
-*/
+.navbar-default .navbar-toggle:hover{
+	background-color: rgb(97, 106, 145);
+}
+
+.navbar-default .navbar-toggle:focus{
+	background-color: rgb(97, 106, 145);
+}
+
 
 
 
