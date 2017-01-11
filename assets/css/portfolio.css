@@ -1,9 +1,7 @@
-/*fix specifity issues in "body" and "bioPhoto h1"*/
+/*fix specifity issues in "bioPhoto h1" (what's wrong??)*/
 /*http://stackoverflow.com/questions/19768794/custom-css-being-overridden-by-bootstrap-css*/
 
 body{
-
- 	/*fix specificity*/
  	background-color: rgb(209, 206, 213);
  }
 
