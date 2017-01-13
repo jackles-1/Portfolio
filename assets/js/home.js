@@ -1,3 +1,5 @@
+// CONVERT AWAY FROM jQUERY
+
 // Fade Out Arrow Upon Scrolling Down
 var windowHeight = $(window).height()/3;
 var scrollPosition;

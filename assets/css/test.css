@@ -1,0 +1,85 @@
+/*allows navbar to run to ends of page*/
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+#navbar{
+	height: 18px;
+	margin: 0 auto;
+	padding: 18px 10%;
+	background-color: rgb(97, 106, 145);
+
+	/*The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position.
+	Used here to vertically center the hamburger.*/
+	position: relative;
+}
+
+ul{
+	list-style: none;
+/*	height: 100%;*/
+	margin: 0;
+/*	padding: 0 15%;*/
+}
+
+li{
+	float: left;
+	margin: 0 15px;
+	font-family: Raleway;
+	font-size: 15px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+button{
+/*	float: right;*/
+	height: 30px;
+	border-radius: 3px;
+	border: solid 1px rgb(209, 206, 213);
+	background-color: rgb(97, 106, 145);
+	outline: none;
+
+	/*removes browser default shadow effect*/
+	border-style: solid;
+	position: absolute;
+
+	/*Sets the position of the top edge of absolutely positioned elements.
+	Used here to center vertically.
+	"Accounts for padding and border if not using box-sizing"--including content, padding, and border 
+	in width and height, rather than default of content-box--including only content*/
+	top: 50%;
+
+	/*Negative margis "pull the element in that direction."
+	Used here to center vertically (half of the height).*/
+	margin-top: -15px;
+
+	/*Sets the position of the right edge of absolutely positioned elements.*/
+	right: 18px;
+}
+
+button:hover, button:focus{
+	background-color: rgb(78, 85, 116);
+}
+
+.iconBar:first-of-type{
+	margin-top: 4px;
+}
+
+.iconBar{
+	background-color: white;
+ 	width: 20px;
+	height: 2px;
+	border-radius: 1px;
+	margin: 0 0 4px 0 ;
+
+	/*BLOCK=takes up full width available, with a new line before and after
+	default is INLINE=takes up only as much width as it needs and doesn't force new lines */
+	display: block;
+}
+
+.hidden{
+	display: none;
+}

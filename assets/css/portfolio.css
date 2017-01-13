@@ -1,5 +1,6 @@
-/*fix specifity issues in "bioPhoto h1" (what's wrong??)*/
-/*http://stackoverflow.com/questions/19768794/custom-css-being-overridden-by-bootstrap-css*/
+/*FIGURE OUT HOW TO MAKE SCALING AT SMALL SIZES DIFFERENT FOR:
+#bioPhoto img
+.bodyPage p*/
 
 body{
  	background-color: rgb(209, 206, 213);
@@ -95,9 +96,10 @@ hr{
 	font-weight: 700;
 	font-size: 3em;
 	margin: 65px 0 25px 0;
+	padding: 0 0 0 25%;
+	text-align: left;
 }
 
-/*FIGURE OUT HOW TO STOP SCALING WHEN THE SCREEN IS SMALL ENOUGH (THE PHOTO GETS TOO SMALL)*/
 /*FIGURE OUT HOW TO REMOVE THIS FROM ITS DIV??*/
 #bioPhoto{
  	width: 40%;
@@ -135,7 +137,7 @@ hr{
 	color: white;
 }
 
-/*navbar active linke (home) on hover*/
+/*navbar active link (home) on hover*/
 .navbar-default .navbar-nav > .active > a:hover{
 	/*1.15*.navbar*/
 	/*background-color: rgb(109, 130, 185);*/
@@ -144,18 +146,14 @@ hr{
 	color: black;
 }
 
+/*navbar hamburger bars*/
 .navbar-default .navbar-toggle .icon-bar{
 	background-color: white;
 }
-
-.navbar-default .navbar-toggle:hover{
-	background-color: rgb(97, 106, 145);
-}
-
+/*navbar hamburger background on hover and focus*/
+.navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus{
 	background-color: rgb(97, 106, 145);
 }
-
-
 
 
