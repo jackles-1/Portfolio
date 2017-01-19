@@ -1,6 +1,10 @@
 /*FIGURE OUT HOW TO MAKE SCALING AT SMALL SIZES DIFFERENT FOR:
 #bioPhoto img
 .bodyPage p*/
+/*GET HAMBURGER WORKING*/
+/*CHANGE LI:FOCUS,LI:HOVER TO CHANGE BACKGROUND COLOR FOR NAVBAR*/
+/*MAKE PORTFOLTIO PAGE SCALE TO ONE COLUMN IN MOBILE*/
+/*FIX NAVBAR RESIZING ISSUE WITH SCROLLBAR ON CHROME*/
 
 body{
  	background-color: rgb(209, 206, 213);
@@ -95,15 +99,16 @@ hr{
 .bodyPage h1{
 	font-weight: 700;
 	font-size: 3em;
-	margin: 65px 0 25px 0;
+	margin: 15px 0 20px 0;
 	padding: 0 0 0 25%;
 	text-align: left;
 }
 
+/*BIO PAGE*/
 /*FIGURE OUT HOW TO REMOVE THIS FROM ITS DIV??*/
 #bioPhoto{
  	width: 40%;
- 	margin: 0 auto 30px auto;
+ 	margin: 0 auto 20px auto;
 }
 
 #bioPhoto img{
@@ -111,49 +116,141 @@ hr{
 	height: auto;
 }
 
+/*PORTFOLIO PAGE*/
+#portfolioContainer{
+	padding: 20px 0 0 20%;
+}
+
+.project{
+	float: left;
+	width: 50%;
+/*	margin-right: 25%;*/
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+
+.project img{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	float: left;
+}
+
+.project h3{
+	padding-left: 221px;
+}
+
+.project ul{
+	padding-left: 240px;
+	font-family: Raleway;
+}
+
+.project h3, .project ul{
+/*	float: right;*/
+	margin: 10px 0;/*
+	padding-left: 240px;*/
+}
+
+/*CONTACT PAGE*/
+a{
+	color: rgb(95, 113, 161);
+}
+
 /*NAVBAR*/
-.navbar{
-/*	background-color: rgb(95, 113, 161);*/
+
+/*allows navbar to run to ends of page*/
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+#navbar{
+	height: 18px;
+	margin: 0 auto;
+	padding: 18px 10%;
 	background-color: rgb(97, 106, 145);
-	font-family: "Raleway";
+
+	/*The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position.
+	Used here to vertically center the hamburger.*/
+	position: relative;
 }
 
-/*navbar links*/
-.navbar-default .navbar-nav > li > a{
+#navbar ul{
+	list-style: none;
+/*	height: 100%;*/
+	margin: 0;
+/*	padding: 0 15%;*/
+}
+
+#navbar li{
+	float: left;
+	margin: 0 15px;
+	font-family: Raleway;
+	font-size: 15px;
+	/*padding: 18px 0;
+	box-sizing: border-box;*/
+}
+
+/*li:hover, li:focus{
+	background-color: rgb(78, 85, 116);
+}*/
+
+#navbar a:hover, #navbar a:focus{
+	color: rgb(37, 41, 44);
+}
+
+#navbar a{
+	text-decoration: none;
 	color: white;
 }
 
-/*navbar links on hover*/
-.navbar-default .navbar-nav > li > a:hover{
-	/*color: #333;*/
-	color: black;
+button{
+/*	float: right;*/
+	height: 30px;
+	border-radius: 3px;
+	border: solid 1px rgb(209, 206, 213);
+	background-color: rgb(97, 106, 145);
+	outline: none;
+
+	/*removes browser default shadow effect*/
+	border-style: solid;
+	position: absolute;
+
+	/*Sets the position of the top edge of absolutely positioned elements.
+	Used here to center vertically.
+	"Accounts for padding and border if not using box-sizing"--including content, padding, and border 
+	in width and height, rather than default of content-box--including only content*/
+	top: 50%;
+
+	/*Negative margis "pull the element in that direction."
+	Used here to center vertically (half of the height).*/
+	margin-top: -15px;
+
+	/*Sets the position of the right edge of absolutely positioned elements.*/
+	right: 18px;
 }
 
-/*navbar active link (home)*/
-.navbar-default .navbar-nav>.active>a{
-	/*0.9*.navbar*/
-	/*background-color: rgb(86, 102, 145);*/
-	background-color: rgb(87, 95, 131);
-	color: white;
+button:hover, button:focus{
+	background-color: rgb(78, 85, 116);
 }
 
-/*navbar active link (home) on hover*/
-.navbar-default .navbar-nav > .active > a:hover{
-	/*1.15*.navbar*/
-	/*background-color: rgb(109, 130, 185);*/
-	background-color: rgb(112, 122, 167);
-	/*color: #333;*/
-	color: black;
+.iconBar:first-of-type{
+	margin-top: 4px;
 }
 
-/*navbar hamburger bars*/
-.navbar-default .navbar-toggle .icon-bar{
+.iconBar{
 	background-color: white;
-}
-/*navbar hamburger background on hover and focus*/
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus{
-	background-color: rgb(97, 106, 145);
+ 	width: 20px;
+	height: 2px;
+	border-radius: 1px;
+	margin: 0 0 4px 0 ;
+
+	/*BLOCK=takes up full width available, with a new line before and after
+	default is INLINE=takes up only as much width as it needs and doesn't force new lines */
+	display: block;
 }
 
+.hidden{
+	display: none;
+}
 
