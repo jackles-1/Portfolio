@@ -5,6 +5,7 @@
 /*CHANGE LI:FOCUS,LI:HOVER TO CHANGE BACKGROUND COLOR FOR NAVBAR*/
 /*MAKE PORTFOLTIO PAGE SCALE TO ONE COLUMN IN MOBILE*/
 /*FIX NAVBAR RESIZING ISSUE WITH SCROLLBAR ON CHROME*/
+/*ADD HOVER, FOCUS SHADOW TO IMAGES ON PORTFOLIO*/
 
 body{
  	background-color: rgb(209, 206, 213);
@@ -89,8 +90,6 @@ hr{
 
 /*PAGES*/
 .bodyPage p{
-	width: 50%;
-	margin: 0 auto 20px auto;
 	text-align: left;
 	font-size: 1.25em;
 	font-family: "Merriweather";
@@ -102,6 +101,11 @@ hr{
 	margin: 15px 0 20px 0;
 	padding: 0 0 0 25%;
 	text-align: left;
+	font-family: Raleway;
+}
+
+.bodyPage h3{
+	font-family: Raleway;
 }
 
 /*BIO PAGE*/
@@ -114,6 +118,11 @@ hr{
 #bioPhoto img{
 	width: 100%;
 	height: auto;
+}
+
+#biography{
+	width: 50%;
+	margin: 0 auto 20px auto;
 }
 
 /*PORTFOLIO PAGE*/
@@ -154,6 +163,19 @@ hr{
 /*CONTACT PAGE*/
 a{
 	color: rgb(95, 113, 161);
+}
+
+#contactContent{
+	width: 50%;
+	margin: 40px auto;
+}
+
+.bodyPage a{
+	text-decoration: none;
+}
+
+.bodyPage a:hover, .bodyPage a:focus{
+	color: rgb(78, 85, 116);
 }
 
 /*NAVBAR*/
