@@ -72,13 +72,26 @@ hr{
 	font-family: "Merriweather";
 }
 
-#circle{
-	padding-bottom: 5%;
+.circle{
+	margin-bottom: 5%;
+	width: 25%;
+	float: left;
 }
 
-#circle img{
+.circle{
+	background: 
+		radial-gradient(circle,
+			rgba(0, 0, 0, 0.5),
+			rgb(209, 206, 213)
+		);
+}
+
+.circle img{
 	width: 100px;
 	height: 100px;
+	/*display: none;*/
+	position: relative;
+	z-index: -1;
 }
 
 #icons img{
