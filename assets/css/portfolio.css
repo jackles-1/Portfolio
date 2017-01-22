@@ -290,7 +290,22 @@ img#pdfIcon{
 	vertical-align: top;
 	font-size: 150%;
 	line-height: 130%;
+	position: relative;
 }
+
+.resumeCategory:after{
+	content: "";
+	border: 2px solid rgb(124, 136, 148);
+	height: 80%;
+	top: 10%;
+	left: 100%;
+	position: absolute;
+	display: block;
+	border-radius: 4;
+}
+
+/*div {width:350px; height:100px; background:lightgray; position:relative; margin:20px;}
+div:after{content:''; width:60px; height:4px; background:gray; position:absolute; bottom:-4px;}*/
 
 
 
