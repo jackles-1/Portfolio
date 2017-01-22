@@ -21,6 +21,7 @@ body{
 	background-size: cover;
 	height: 100vh;
 	width: 100vw;
+	max-width: 100%;
 	text-align: center;
 	padding-top: 40vh;
 	color: white;
@@ -55,11 +56,11 @@ hr{
 #arrow{
 	position: absolute;
 	text-align: center;
-	bottom: 5vh;
+	bottom: 6vh;
 	font-size: 1.5em;
 }
 
-#homeBody{
+#homeLinks{
 	text-align: center;
 	margin: auto;
 	padding-left: 20%;
@@ -68,35 +69,95 @@ hr{
 	padding-bottom: 5%;
 }
 
-#homeBody p{
-	color: #333;
-	font-size: 1.5em;
-	font-family: "Merriweather";
-}
-
 .circle{
 	margin-bottom: 5%;
 	width: 25%;
 	float: left;
-}
-
-.circle{
-	background: 
-		radial-gradient(circle,
-			rgba(0, 0, 0, 0.5),
-			rgb(209, 206, 213)
-		);
+	position: relative;
 }
 
 .circle img{
-	width: 100px;
-	height: 100px;
-	/*display: none;*/
+	width: 120px;
+	height: 120px;
 	position: relative;
-	z-index: -1;
+	z-index: -2;
+	display: none;
 }
 
-#icons img{
+.circle a{
+	border-radius: 100%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	font-family: Satisfy;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	line-height: 120px;
+
+	/*makes it so the a can have a height and width (a's default to inline)*/
+	display: inline-block;
+}
+
+.bioPic{
+	background-image: url(flowers.jpg);
+}
+
+.bioPicHover{
+	background-image: radial-gradient(circle,
+			rgba(0, 0, 0, 0.5) 60px,
+			rgb(209, 206, 213) 60px
+		), url(flowers.jpg);
+}
+
+.portfolioPic{
+	background-image: url(flowers.jpg);
+}
+
+.portfolioPicHover{
+	background-image: radial-gradient(circle,
+			rgba(0, 0, 0, 0.5) 60px,
+			rgb(209, 206, 213) 60px
+		), url(flowers.jpg);
+}
+
+.resumePic{
+	background-image: url(flowers.jpg);
+}
+
+.resumePicHover{
+	background-image: radial-gradient(circle,
+			rgba(0, 0, 0, 0.5) 60px,
+			rgb(209, 206, 213) 60px
+		), url(flowers.jpg);
+}
+
+.contactPic{
+	background-image: url(flowers.jpg);
+}
+
+.contactPicHover{
+	background-image: radial-gradient(circle,
+			rgba(0, 0, 0, 0.5) 60px,
+			rgb(209, 206, 213) 60px
+		), url(flowers.jpg);
+}
+
+#homeContent{
+	margin: 110px auto 30px auto;
+	text-align: center;
+}
+
+#homeContent p{
+	color: #333;
+	font-size: 1.5em;
+	font-family: "Merriweather";
+	/*position: absolute;
+	top: 124vh;
+	left: 50vw;*/
+}
+
+#homeContent img{
 	padding-top: 10px;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -152,7 +213,7 @@ hr{
 	overflow: hidden;
 }
 
-.portfolioIcons{
+.portfoliohomeContent{
 	padding: 15px 0 0 0;
 }
 
