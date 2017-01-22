@@ -2,7 +2,6 @@
 #bioPhoto img
 .bodyPage p*/
 /*GET HAMBURGER WORKING*/
-/*CHANGE LI:FOCUS,LI:HOVER TO CHANGE BACKGROUND COLOR FOR NAVBAR*/
 /*MAKE PORTFOLTIO PAGE SCALE TO ONE COLUMN IN MOBILE*/
 /*FIX NAVBAR RESIZING ISSUE WITH SCROLLBAR ON CHROME*/
 /*ADD HOVER, FOCUS SHADOW TO IMAGES ON PORTFOLIO*/
@@ -264,16 +263,12 @@ html, body{
 
 #navbar a{
 	float: left;
-	padding: 9px 15px;
+	padding: 18px 15px;
 	font-family: Raleway;
 	font-size: 15px;
 	box-sizing: border-box;
-	margin-top: -9px;
+	margin-top: -18px;
 }
-
-/*li:hover, li:focus{
-	background-color: rgb(78, 85, 116);
-}*/
 
 #navbar a:hover, #navbar a:focus{
 	color: rgb(37, 41, 44);
@@ -284,9 +279,9 @@ html, body{
 	color: white;
 }
 
-/*.currentPage a{
+.currentPage a{
 	background-color: rgb(78, 85, 116);
-}*/
+}
 
 button{
 /*	float: right;*/
