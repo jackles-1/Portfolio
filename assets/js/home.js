@@ -6,8 +6,11 @@ var arrow = document.querySelector("#arrow");
 var body = document.querySelector("body");
 
 window.onscroll = function(){
-	scrollPosition = body.scrollTop;
+	// Chrome || Firefox
+	scrollPosition = document.body.scrollTop || window.pageYOffset || 0;
 	percentScrolled = scrollPosition/windowHeight;
+
+	console.log(scrollPosition);
 	
 	if(percentScrolled <= 1){
 		var percentFade = 1-percentScrolled;
