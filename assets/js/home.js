@@ -26,46 +26,44 @@ var pageIcons = document.querySelectorAll(".circle a");
 
 for(var i=0; i < pageIcons.length; i++){
 	pageIcons[i].addEventListener("mouseover", function(){
-		if(this.getAttribute("class")==="bioPic")
-		{
+		if(this.classList.contains("bioPic")){
 			this.classList.add("bioPicHover");
 			this.classList.remove("bioPic");
 			this.textContent = "Bio";
 		}
-		else if(this.getAttribute("class")==="portfolioPic"){
+		else if(this.classList.contains("portfolioPic")){
 			this.classList.add("portfolioPicHover");
 			this.classList.remove("portfolioPic");
 			this.textContent = "Portfolio";	
 		}
-		else if(this.getAttribute("class")==="resumePic"){
+		else if(this.classList.contains("resumePic")){
 			this.classList.add("resumePicHover");
 			this.classList.remove("resumePic");
 			this.textContent = "Resume";	
 		}
-		else if(this.getAttribute("class")==="contactPic"){
+		else if(this.classList.contains("contactPic")){
 			this.classList.add("contactPicHover");
 			this.classList.remove("contactPic");
 			this.textContent = "Contact!";	
 		}
 	});	
 	pageIcons[i].addEventListener("mouseout", function(){
-		if(this.getAttribute("class")==="bioPicHover")
-		{
+		if(this.classList.contains("bioPicHover")){
 			this.classList.add("bioPic");
 			this.classList.remove("bioPicHover");
 			this.textContent = "";
 		}
-		else if(this.getAttribute("class")==="portfolioPicHover"){
+		else if(this.classList.contains("portfolioPicHover")){
 			this.classList.add("portfolioPic");
 			this.classList.remove("portfolioPicHover");
 			this.textContent = "";
 		}
-		else if(this.getAttribute("class")==="resumePicHover"){
+		else if(this.classList.contains("resumePicHover")){
 			this.classList.add("resumePic");
 			this.classList.remove("resumePicHover");
 			this.textContent = "";
 		}
-		else if(this.getAttribute("class")==="contactPicHover"){
+		else if(this.classList.contains("contactPicHover")){
 			this.classList.add("contactPic");
 			this.classList.remove("contactPicHover");
 			this.textContent = "";

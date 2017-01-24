@@ -150,11 +150,10 @@ hr{
 
 #homeContent p{
 	color: #333;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-family: "Merriweather";
-	/*position: absolute;
-	top: 124vh;
-	left: 50vw;*/
+	width: 50%;
+	margin: 0 auto 20px auto;
 }
 
 #homeContent img{
@@ -184,7 +183,6 @@ hr{
 }
 
 /*BIO PAGE*/
-/*FIGURE OUT HOW TO REMOVE THIS FROM ITS DIV??*/
 #bioPhoto{
  	width: 40%;
  	margin: 0 auto 20px auto;
@@ -198,23 +196,27 @@ hr{
 #biography{
 	width: 50%;
 	margin: 0 auto 20px auto;
+	font-size: 0.9em;
 }
 
 /*PORTFOLIO PAGE*/
 #portfolioContainer{
-	padding: 20px 15% 0 20%;
+	padding: 20px 10% 0 20%;
 }
 
 .project{
 	float: left;
 	width: 50%;
-/*	margin-right: 25%;*/
 	padding-bottom: 50px;
 	overflow: hidden;
 }
 
-.portfoliohomeContent{
-	padding: 15px 0 0 0;
+.project li{
+	margin: 3px 0;
+}
+
+.languages{
+	font-weight: 700;
 }
 
 img.projectPic{
@@ -234,9 +236,7 @@ img.projectPic{
 }
 
 .project h3, .project ul{
-/*	float: right;*/
-	margin: 10px 0;/*
-	padding-left: 240px;*/
+	margin: 10px 0;
 }
 
 /*RESUME PAGE*/
@@ -259,7 +259,7 @@ img.projectPic{
 
 img#pdfIcon{
 	float: right;
-	padding-right: 23%;
+	padding-right: 25%;
 }
 
 #resume h2{
@@ -303,11 +303,6 @@ img#pdfIcon{
 	display: block;
 	border-radius: 4;
 }
-
-/*div {width:350px; height:100px; background:lightgray; position:relative; margin:20px;}
-div:after{content:''; width:60px; height:4px; background:gray; position:absolute; bottom:-4px;}*/
-
-
 
 /*CONTACT PAGE*/
 a{
