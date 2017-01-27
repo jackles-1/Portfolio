@@ -251,12 +251,12 @@ img.projectPic{
 }
 
 #resume{
-	width: 55%;
+	width: 65%;
 	padding-left: 22%;
 	font-weight: 700;
 	font-family: Raleway;
 	line-height: 130%;
-	margin-top: 40px;
+	margin: 40px 0;
 }
 
 #resumeHeader h1{
@@ -265,7 +265,8 @@ img.projectPic{
 
 img#pdfIcon{
 	float: right;
-	padding-right: 25%;
+	padding-right: 22%;
+	width: 50px;
 }
 
 #resume h2{
@@ -302,8 +303,8 @@ img#pdfIcon{
 .resumeCategory:after{
 	content: "";
 	border: 2px solid rgb(124, 136, 148);
-	height: 80%;
-	top: 10%;
+	height: 92%;
+	top: 7px;
 	left: 100%;
 	position: absolute;
 	display: block;
