@@ -101,47 +101,55 @@ hr{
 }
 
 .bioPic{
-	background-image: url(flowers.jpg);
+	background-image: url(../img/bioPic.jpg);
+	background-size: contain;
 }
 
 .bioPicHover{
 	background-image: radial-gradient(circle,
 			rgba(0, 0, 0, 0.5) 60px,
 			rgb(209, 206, 213) 60px
-		), url(flowers.jpg);
+		), url(../img/bioPic.jpg);
+	background-size: contain;
 }
 
 .portfolioPic{
-	background-image: url(flowers.jpg);
+	background-image: url(../img/portfolioPic.jpg);
+	background-size: contain;
 }
 
 .portfolioPicHover{
 	background-image: radial-gradient(circle,
 			rgba(0, 0, 0, 0.5) 60px,
 			rgb(209, 206, 213) 60px
-		), url(flowers.jpg);
+		), url(../img/portfolioPic.jpg);
+	background-size: contain;
 }
 
 .resumePic{
-	background-image: url(flowers.jpg);
+	background-image: url(../img/resumePic.jpg);
+	background-size: contain;
 }
 
 .resumePicHover{
 	background-image: radial-gradient(circle,
 			rgba(0, 0, 0, 0.5) 60px,
 			rgb(209, 206, 213) 60px
-		), url(flowers.jpg);
+		), url(../img/resumePic.jpg);
+	background-size: contain;
 }
 
 .contactPic{
-	background-image: url(flowers.jpg);
+	background-image: url(../img/contactPic.jpg);
+	background-size: contain;
 }
 
 .contactPicHover{
 	background-image: radial-gradient(circle,
 			rgba(0, 0, 0, 0.5) 60px,
 			rgb(209, 206, 213) 60px
-		), url(flowers.jpg);
+		), url(../img/contactPic.jpg);
+	background-size: contain;
 }
 
 #homeContent{
@@ -179,6 +187,14 @@ hr{
 
 .bodyPage h3{
 	font-family: Raleway;
+}
+
+.bodyPage a{
+	text-decoration: none;
+}
+
+.bodyPage a:hover, .bodyPage a:focus{
+	color: rgb(78, 85, 116);
 }
 
 /*BIO PAGE*/
@@ -319,14 +335,6 @@ a{
 #contactContent{
 	width: 50%;
 	margin: 40px auto;
-}
-
-.bodyPage a{
-	text-decoration: none;
-}
-
-.bodyPage a:hover, .bodyPage a:focus{
-	color: rgb(78, 85, 116);
 }
 
 /*NAVBAR*/
